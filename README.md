@@ -31,7 +31,7 @@ The rest api are based on fastapi and uses uvicorn to run a server.
 ```
 >uvicorn --reload annotation_convertion_api:app --port 8000
 ```
-3) Once the server is running you can test the API using curl with the kognic file as <KOGNIC-PAYLOAD-JSON>. You could copy the content in kognic_1.json and use that as the <KOGNIC-PAYLOAD-JSON>.
+3) Once the server is running you can test the API using curl with the kognic file as "KOGNIC-PAYLOAD-JSON". You could copy the content in kognic_1.json and use that as the "KOGNIC-PAYLOAD-JSON".
 ```
 >curl -X 'POST'   'http://localhost:8000/kognic_to_openlabel'   -H 'accept: application/json'   -H 'Content-Type: application/json'   -d '<KOGNIC-PAYLOAD-JSON>'
 ```
